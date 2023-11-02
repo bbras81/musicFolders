@@ -21,4 +21,3 @@ for caminho_ativo, nome_diretorio, ficheiros in os.walk(caminho_origem):
     print(f'Nome Directorios {nome_diretorio}')
     print(f'Ficheiros {ficheiros}')
     print()
-    
