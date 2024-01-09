@@ -17,7 +17,9 @@ else:
 caminho_origem = sys.argv[1]
 
 for caminho_ativo, nome_diretorio, ficheiros in os.walk(caminho_origem):
+    if len(ficheiros) == '':
+        pass
     print(f'Caminho ativo {caminho_ativo}')
-    print(f'Nome Directorios {nome_diretorio}')
-    print(f'Ficheiros {ficheiros}')
+    print(f'Nome Directorios {len(nome_diretorio)}')
+    print(f'Ficheiros {len(ficheiros)}')
     print()
